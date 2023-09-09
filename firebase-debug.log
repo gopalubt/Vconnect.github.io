@@ -1,0 +1,376 @@
+[debug] [2023-09-09T12:10:39.994Z] ----------------------------------------------------------------------
+[debug] [2023-09-09T12:10:40.003Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\91978\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-09T12:10:40.005Z] CLI Version:   12.5.3
+[debug] [2023-09-09T12:10:40.007Z] Platform:      win32
+[debug] [2023-09-09T12:10:40.008Z] Node Version:  v16.14.2
+[debug] [2023-09-09T12:10:40.012Z] Time:          Sat Sep 09 2023 17:40:40 GMT+0530 (India Standard Time)
+[debug] [2023-09-09T12:10:40.013Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-09T12:10:40.056Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-09T12:10:40.059Z] > authorizing via signed-in user (ranagopal29@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\91978\Desktop\LearningHub\JS\chatRoom\Vconnect.github.io
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-09T12:12:05.029Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-09-09T12:12:05.964Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-09-09T12:12:05.965Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project friendlychat-232ad (FriendlyChat) 
+[info] 
+=== Firestore Setup
+[debug] [2023-09-09T12:12:09.027Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/firestore.googleapis.com [none]
+[debug] [2023-09-09T12:12:09.028Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/firestore.googleapis.com x-goog-quota-user=projects/friendlychat-232ad
+[debug] [2023-09-09T12:12:11.109Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/firestore.googleapis.com 200
+[debug] [2023-09-09T12:12:11.109Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/firestore.googleapis.com [omitted]
+[debug] [2023-09-09T12:12:11.111Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/friendlychat-232ad/databases/(default) [none]
+[debug] [2023-09-09T12:12:11.884Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/friendlychat-232ad/databases/(default) 200
+[debug] [2023-09-09T12:12:11.884Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/friendlychat-232ad/databases/(default) {"name":"projects/friendlychat-232ad/databases/(default)","uid":"6ddf3acc-58ac-477c-9c87-878df885f232","createTime":"2023-09-09T09:37:44.154898Z","updateTime":"2023-09-09T09:37:44.154898Z","locationId":"asia-south1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-09-09T11:12:12.404531Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"j","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IObSrobAnYEDMLOq1sysnYED"}
+[debug] [2023-09-09T12:12:11.885Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-09-09T12:12:11.885Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-09T12:12:11.886Z] > authorizing via signed-in user (ranagopal29@gmail.com)
+[debug] [2023-09-09T12:12:11.886Z] [iam] checking project friendlychat-232ad for permissions ["firebase.projects.get"]
+[debug] [2023-09-09T12:12:11.888Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:testIamPermissions [none]
+[debug] [2023-09-09T12:12:11.888Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:testIamPermissions x-goog-quota-user=projects/friendlychat-232ad
+[debug] [2023-09-09T12:12:11.889Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-09T12:12:13.666Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:testIamPermissions 200
+[debug] [2023-09-09T12:12:13.667Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-09-09T12:12:19.395Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/friendlychat-232ad/releases pageSize=10&pageToken=
+[debug] [2023-09-09T12:12:21.096Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/friendlychat-232ad/releases 200
+[debug] [2023-09-09T12:12:21.096Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/friendlychat-232ad/releases {"releases":[{"name":"projects/friendlychat-232ad/releases/cloud.firestore","rulesetName":"projects/friendlychat-232ad/rulesets/7540584f-4ed8-4704-bede-cc321bdc210d","createTime":"2023-09-09T09:37:51.201446Z","updateTime":"2023-09-09T11:51:50.383909Z"},{"name":"projects/friendlychat-232ad/releases/firebase.storage/friendlychat-232ad.appspot.com","rulesetName":"projects/friendlychat-232ad/rulesets/b1aea87a-dc3c-445e-802c-a6feeec06c27","createTime":"2023-09-09T09:45:09.970826Z","updateTime":"2023-09-09T09:54:33.335336Z"}]}
+[debug] [2023-09-09T12:12:21.097Z] Found ruleset: projects/friendlychat-232ad/rulesets/7540584f-4ed8-4704-bede-cc321bdc210d
+[debug] [2023-09-09T12:12:21.097Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/friendlychat-232ad/rulesets/7540584f-4ed8-4704-bede-cc321bdc210d [none]
+[debug] [2023-09-09T12:12:22.522Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/friendlychat-232ad/rulesets/7540584f-4ed8-4704-bede-cc321bdc210d 200
+[debug] [2023-09-09T12:12:22.523Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/friendlychat-232ad/rulesets/7540584f-4ed8-4704-bede-cc321bdc210d [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-09-09T12:12:27.862Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/friendlychat-232ad/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-09-09T12:12:27.866Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/friendlychat-232ad/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-09-09T12:12:28.174Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/friendlychat-232ad/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-09-09T12:12:28.175Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/friendlychat-232ad/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/friendlychat-232ad/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2023-09-09T12:12:28.252Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/friendlychat-232ad/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-09-09T12:12:28.252Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/friendlychat-232ad/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Functions Setup
+[debug] [2023-09-09T12:12:28.258Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-09T12:12:28.259Z] > authorizing via signed-in user (ranagopal29@gmail.com)
+[debug] [2023-09-09T12:12:28.259Z] [iam] checking project friendlychat-232ad for permissions ["firebase.projects.get"]
+[debug] [2023-09-09T12:12:28.260Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:testIamPermissions [none]
+[debug] [2023-09-09T12:12:28.260Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:testIamPermissions x-goog-quota-user=projects/friendlychat-232ad
+[debug] [2023-09-09T12:12:28.261Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-09T12:12:29.805Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:testIamPermissions 200
+[debug] [2023-09-09T12:12:29.805Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-09T12:12:29.807Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-09-09T12:12:29.807Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/friendlychat-232ad
+[debug] [2023-09-09T12:12:29.811Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-09-09T12:12:29.811Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/friendlychat-232ad
+[debug] [2023-09-09T12:12:31.713Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/cloudfunctions.googleapis.com 200
+[debug] [2023-09-09T12:12:31.713Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-09-09T12:12:31.747Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/runtimeconfig.googleapis.com 200
+[debug] [2023-09-09T12:12:31.747Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/friendlychat-232ad/services/runtimeconfig.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-09-09T12:18:06.128Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-09-09T12:18:06.378Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-09-09T12:18:06.378Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.1","browserURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\91978\Desktop\LearningHub\JS\chatRoom\Vconnect.github.io 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=5922492&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-09-09T12:18:08.283Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-09-09T12:18:08.284Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-09-09T12:18:08.798Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-09-09T12:18:08.799Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-09-09T12:18:08.820Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-09-09T12:18:09.654Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-09-09T12:18:09.655Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"gopalubt","id":104191530,"node_id":"U_kgDOBjXWKg","avatar_url":"https://avatars.githubusercontent.com/u/104191530?v=4","gravatar_id":"","url":"https://api.github.com/users/gopalubt","html_url":"https://github.com/gopalubt","followers_url":"https://api.github.com/users/gopalubt/followers","following_url":"https://api.github.com/users/gopalubt/following{/other_user}","gists_url":"https://api.github.com/users/gopalubt/gists{/gist_id}","starred_url":"https://api.github.com/users/gopalubt/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/gopalubt/subscriptions","organizations_url":"https://api.github.com/users/gopalubt/orgs","repos_url":"https://api.github.com/users/gopalubt/repos","events_url":"https://api.github.com/users/gopalubt/events{/privacy}","received_events_url":"https://api.github.com/users/gopalubt/received_events","type":"User","site_admin":false,"name":"Gopal Rana","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":7,"public_gists":0,"followers":0,"following":0,"created_at":"2022-04-22T07:15:04Z","updated_at":"2023-09-09T06:15:33Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":966,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as gopalubt 
+[info] 
+[debug] [2023-09-09T12:19:46.532Z] >>> [apiv2][query] GET https://api.github.com/repos/gopalubt/Vconnect.github.io/actions/secrets/public-key type=owner
+[debug] [2023-09-09T12:19:46.991Z] <<< [apiv2][status] GET https://api.github.com/repos/gopalubt/Vconnect.github.io/actions/secrets/public-key 200
+[debug] [2023-09-09T12:19:46.991Z] <<< [apiv2][body] GET https://api.github.com/repos/gopalubt/Vconnect.github.io/actions/secrets/public-key {"key_id":"568250167242549743","key":"V9rvInYK1xTDVK6boL8S+ZOEPqLCYJggcezkF6TfLHM="}
+[debug] [2023-09-09T12:19:46.998Z] >>> [apiv2][query] GET https://api.github.com/repos/gopalubt/Vconnect.github.io [none]
+[debug] [2023-09-09T12:19:47.503Z] <<< [apiv2][status] GET https://api.github.com/repos/gopalubt/Vconnect.github.io 200
+[debug] [2023-09-09T12:19:47.504Z] <<< [apiv2][body] GET https://api.github.com/repos/gopalubt/Vconnect.github.io {"id":689223316,"node_id":"R_kgDOKRS2lA","name":"Vconnect.github.io","full_name":"gopalubt/Vconnect.github.io","private":false,"owner":{"login":"gopalubt","id":104191530,"node_id":"U_kgDOBjXWKg","avatar_url":"https://avatars.githubusercontent.com/u/104191530?v=4","gravatar_id":"","url":"https://api.github.com/users/gopalubt","html_url":"https://github.com/gopalubt","followers_url":"https://api.github.com/users/gopalubt/followers","following_url":"https://api.github.com/users/gopalubt/following{/other_user}","gists_url":"https://api.github.com/users/gopalubt/gists{/gist_id}","starred_url":"https://api.github.com/users/gopalubt/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/gopalubt/subscriptions","organizations_url":"https://api.github.com/users/gopalubt/orgs","repos_url":"https://api.github.com/users/gopalubt/repos","events_url":"https://api.github.com/users/gopalubt/events{/privacy}","received_events_url":"https://api.github.com/users/gopalubt/received_events","type":"User","site_admin":false},"html_url":"https://github.com/gopalubt/Vconnect.github.io","description":"this a javascript chat app","fork":false,"url":"https://api.github.com/repos/gopalubt/Vconnect.github.io","forks_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/forks","keys_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/keys{/key_id}","collaborators_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/teams","hooks_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/hooks","issue_events_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/issues/events{/number}","events_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/events","assignees_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/assignees{/user}","branches_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/branches{/branch}","tags_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/tags","blobs_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/git/refs{/sha}","trees_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/git/trees{/sha}","statuses_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/statuses/{sha}","languages_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/languages","stargazers_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/stargazers","contributors_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/contributors","subscribers_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/subscribers","subscription_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/subscription","commits_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/commits{/sha}","git_commits_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/git/commits{/sha}","comments_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/comments{/number}","issue_comment_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/issues/comments{/number}","contents_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/contents/{+path}","compare_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/compare/{base}...{head}","merges_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/merges","archive_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/downloads","issues_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/issues{/number}","pulls_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/pulls{/number}","milestones_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/milestones{/number}","notifications_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/labels{/name}","releases_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/releases{/id}","deployments_url":"https://api.github.com/repos/gopalubt/Vconnect.github.io/deployments","created_at":"2023-09-09T06:19:16Z","updated_at":"2023-09-09T06:26:36Z","pushed_at":"2023-09-09T06:26:34Z","git_url":"git://github.com/gopalubt/Vconnect.github.io.git","ssh_url":"git@github.com:gopalubt/Vconnect.github.io.git","clone_url":"https://github.com/gopalubt/Vconnect.github.io.git","svn_url":"https://github.com/gopalubt/Vconnect.github.io","homepage":null,"size":2,"stargazers_count":0,"watchers_count":0,"language":"HTML","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":true,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":{"key":"mit","name":"MIT License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit","node_id":"MDc6TGljZW5zZTEz"},"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","security_and_analysis":{"secret_scanning":{"status":"disabled"},"secret_scanning_push_protection":{"status":"disabled"},"dependabot_security_updates":{"status":"disabled"}},"network_count":0,"subscribers_count":1}
+[debug] [2023-09-09T12:19:47.508Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/friendlychat-232ad/serviceAccounts [none]
+[debug] [2023-09-09T12:19:47.508Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/friendlychat-232ad/serviceAccounts {"accountId":"github-action-689223316","serviceAccount":{"displayName":"GitHub Actions (gopalubt/Vconnect.github.io)","description":"A service account with permission to deploy to Firebase Hosting and Cloud Functions for the GitHub repository gopalubt/Vconnect.github.io"}}
+[debug] [2023-09-09T12:19:50.050Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/friendlychat-232ad/serviceAccounts 200
+[debug] [2023-09-09T12:19:50.050Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/friendlychat-232ad/serviceAccounts [omitted]
+[debug] [2023-09-09T12:19:50.052Z] >>> [apiv2][query] GET https://iam.googleapis.com/v1/projects/friendlychat-232ad/serviceAccounts/github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com [none]
+[debug] [2023-09-09T12:19:50.056Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:getIamPolicy [none]
+[debug] [2023-09-09T12:19:51.624Z] <<< [apiv2][status] GET https://iam.googleapis.com/v1/projects/friendlychat-232ad/serviceAccounts/github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com 200
+[debug] [2023-09-09T12:19:51.625Z] <<< [apiv2][body] GET https://iam.googleapis.com/v1/projects/friendlychat-232ad/serviceAccounts/github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com {"name":"projects/friendlychat-232ad/serviceAccounts/github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com","projectId":"friendlychat-232ad","uniqueId":"104952341144750363084","email":"github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com","displayName":"GitHub Actions (gopalubt/Vconnect.github.io)","etag":"MDEwMjE5MjA=","description":"A service account with permission to deploy to Firebase Hosting and Cloud Functions for the GitHub repository gopalubt/Vconnect.github.io","oauth2ClientId":"104952341144750363084"}
+[debug] [2023-09-09T12:19:51.752Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:getIamPolicy 200
+[debug] [2023-09-09T12:19:51.753Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:getIamPolicy {"version":1,"etag":"BwYE6sn+0+Y=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-117860415343@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:friendlychat-232ad@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-117860415343@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-117860415343@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firebasestorage.serviceAgent","members":["serviceAccount:service-117860415343@gcp-sa-firebasestorage.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-117860415343@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:ranagopal29@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-117860415343@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/storage.admin","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com"]}]}
+[debug] [2023-09-09T12:19:51.757Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:setIamPolicy [none]
+[debug] [2023-09-09T12:19:51.758Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:setIamPolicy {"policy":{"version":1,"etag":"BwYE6sn+0+Y=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-117860415343@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:friendlychat-232ad@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-117860415343@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com","serviceAccount:github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-117860415343@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firebasestorage.serviceAgent","members":["serviceAccount:service-117860415343@gcp-sa-firebasestorage.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-117860415343@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:ranagopal29@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-117860415343@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/storage.admin","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.developer","members":["serviceAccount:github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2023-09-09T12:19:54.093Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:setIamPolicy 200
+[debug] [2023-09-09T12:19:54.094Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-232ad:setIamPolicy {"version":1,"etag":"BwYE7BxWKUs=","bindings":[{"role":"roles/cloudfunctions.developer","members":["serviceAccount:github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-117860415343@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:friendlychat-232ad@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-117860415343@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com","serviceAccount:github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-117860415343@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firebasestorage.serviceAgent","members":["serviceAccount:service-117860415343@gcp-sa-firebasestorage.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-117860415343@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:ranagopal29@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-117860415343@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com"]},{"role":"roles/storage.admin","members":["serviceAccount:firebase-adminsdk-h3lfz@friendlychat-232ad.iam.gserviceaccount.com"]}]}
+[debug] [2023-09-09T12:19:54.095Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/friendlychat-232ad/serviceAccounts/github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com/keys [none]
+[debug] [2023-09-09T12:19:54.096Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/friendlychat-232ad/serviceAccounts/github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com/keys {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2023-09-09T12:19:55.226Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/friendlychat-232ad/serviceAccounts/github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com/keys 200
+[debug] [2023-09-09T12:19:55.227Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/friendlychat-232ad/serviceAccounts/github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com/keys {"name":"projects/friendlychat-232ad/serviceAccounts/github-action-689223316@friendlychat-232ad.iam.gserviceaccount.com/keys/7fcd4bbdba9b9e6581a6dc99a337a24b007f28d9","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE","privateKeyData":"ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiZnJpZW5kbHljaGF0LTIzMmFkIiwKICAicHJpdmF0ZV9rZXlfaWQiOiAiN2ZjZDRiYmRiYTliOWU2NTgxYTZkYzk5YTMzN2EyNGIwMDdmMjhkOSIsCiAgInByaXZhdGVfa2V5IjogIi0tLS0tQkVHSU4gUFJJVkFURSBLRVktLS0tLVxuTUlJRXZRSUJBREFOQmdrcWhraUc5dzBCQVFFRkFBU0NCS2N3Z2dTakFnRUFBb0lCQVFESDRseE1uZVJtM2dSZVxub1E3djlzM3JwbzdyZkdiUysxWWt6bkwxendWeDJEejA3bHdZNHRwK1NCakNKQjFmOEtXbThkdzBKVy9td0FRZVxuNEg5c1NnODZZblZWblZRR09NWlFJNE83M2w4SmU3bVFqTW1Qc2ZxL0FYa2ZQcjRCd29XR0VoMUlXUlVWTUIvVlxuTnBsV00vT2ZsQklNOHBaQlVqZGVqcEZDUjAybFJuODQwVW04TlFKTDJ3d1UraFA2MkNFTWdKYXYxNXVpUExpN1xubEI1NWgxT2NjSU5qSmUxa0pxK252ZjhhRERzN09lSlFvVEtCaUtDVDQ4UkM5VTFha1pzN25WZFhrQ3VGbmsveVxubGR4SGt3RkhRTGtoREp4Myt4YTRNWVpYUEFsVldINE0zVllGaUMwcXdlc3NnWkdra3MwUmhrbjBxS1dmWnROQVxuMUUveEVmc0pBZ01CQUFFQ2dnRUFHY1dqNVBVT3QveTBUNGN3cDl3SW5QT3l4Y1lhYytXWUs5SzZtOXIvZHJoTVxuMDcvUC9CMXowb2gxT01MelRxVjJsbG5rN0l4UEswOWl1S0Ixalg3WEM4NGFGdG5jTlprb2FMakxpWE9ZaVY1OFxuaEpqQ2ZGYVVZQUJPbjZxMVVRREZ1bzJuWE9hdmd6WGJST0J2VU9BTjcydG1FR2xPMmtsQmZsMmZlUTQ4Z3F5alxudEhFZnhlS053ZnhDbkEvcjdJQ2s1SzVhL00vNW9WY0tPeVpkdEl0aWZENDBUVHlxb0RxWWxVNXNpRTR2dVM5UlxuTWRnR3VGWHdUNFpVSlljYmhiWG13Y1VleUJBdjJLUVZVcVN0TndLSnJWdUJZdzF0NUdPdU45bXZOQklneHZ2MVxudTQzMzdMUGRqUG4yZ05wMUVHWm02bE9KYjl5UUg1YWlJcHZqQjdpdUlRS0JnUUQzbGo4NklvOFU2ci8zNDZ5NFxuQUFjakpxOVliWlQ1VTd3VXkwK3R0UlBDb2NnVFAwLzJSQzhSTHFtdEVKWGNSWlRiMU5MY2J3YlZTSXNmMVQ2bVxuUW9Cb3gvR1VRanR4SWNHRDh2VXN6cjJNbjBDVUtaeW04NnB6c29CSm9wVnI3aXh5cnRPcEtzZHltSzgyRW94MFxuUXZSTzlMVVA2bVRQdXhlYjZoSjN2YkFON1FLQmdRRE9yU1lqL1REQTh3S1U4TElBcDdwWlNseWRPelBXRXA0WlxuMkNJOXFUWjFhOUtJWk1MRERLbDk0S2tqZXYxT3pQVEFwWlBKbkJkQkdkTE9IcmwzL1UyWHhXbXpTeXJzSytDOFxuaHBEQkRaZ09NdWJMWlNUcStybGhxSEhUaHA4VFp1aEgrVWhuUmw2K2kwMHh0cjFmZGY1OW14T2tkUmFTN3ZOZVxuRkhnZGg0MmVEUUtCZ1FDNVhyakFJaGZXcFZ4TmtSMUVObUVocEZrc2IvOVdIYWQ0T2pEUjhmMTFnQU40eGJKc1xudytncGlUSm83VDRHeWVJR0pYWXFyTVlFOG1lWDBlVXlQaUErVTFWQWw4WkJrZkI5aG02aXViZVpqYktnTy9lWlxuMkY0S2VkOHJRcHQxVDhIZnE1MjF6dDI5b3l1cjVIOWNuTFNtV1BrbmpXc2xUUU1FTFdEZVhodHVrUUtCZ0Y3UFxuL2d4S2pjQW1lMHU2Yzk1ckU4ajhuU29nUzdKc1RnMUxJc0lveTJ2b3IrZVVXZWpDK1VwZTh4anN4aUlOVWtiQ1xuYnQ3eGRaV085QzlNMXdiZHRHZm96NG5KOVFIdFN5Y1JrSHlQOE82cW1VZzd1VWozQm01dnFQQkI5TjRndW5TeVxuUG0zcVVYS1dVeTU0Ujczd1VuUnEzUUw0R0FnR0NLMWpOSXRQY1Q5TkFvR0FHNWZOTzRwcXlOMTZ6T1RmalpRZVxuSk5LNkpGaWp4ZUhWcE52WTBYZk5YM2c5Ri9mVjFna3FTd3hwRG5DKzJQWFRRSTN2WWpvQjRDYzBnVmo0M0VWcVxuaGsrRndYblY3YWh2VEI2V2c0WlJVRnZ5NXY2clVxbW5wQzBFRkRkSHU0Wm9UZnVSRkY1QjNTQWNubnV2NFZVRVxuOU1zSjF3ajZ1RXlqRlR6TjhTN2dOVWs9XG4tLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tXG4iLAogICJjbGllbnRfZW1haWwiOiAiZ2l0aHViLWFjdGlvbi02ODkyMjMzMTZAZnJpZW5kbHljaGF0LTIzMmFkLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwKICAiY2xpZW50X2lkIjogIjEwNDk1MjM0MTE0NDc1MDM2MzA4NCIsCiAgImF1dGhfdXJpIjogImh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9vL29hdXRoMi9hdXRoIiwKICAidG9rZW5fdXJpIjogImh0dHBzOi8vb2F1dGgyLmdvb2dsZWFwaXMuY29tL3Rva2VuIiwKICAiYXV0aF9wcm92aWRlcl94NTA5X2NlcnRfdXJsIjogImh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL29hdXRoMi92MS9jZXJ0cyIsCiAgImNsaWVudF94NTA5X2NlcnRfdXJsIjogImh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL3JvYm90L3YxL21ldGFkYXRhL3g1MDkvZ2l0aHViLWFjdGlvbi02ODkyMjMzMTYlNDBmcmllbmRseWNoYXQtMjMyYWQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0K","validAfterTime":"2023-09-09T12:19:55Z","validBeforeTime":"9999-12-31T23:59:59Z","keyAlgorithm":"KEY_ALG_RSA_2048","keyOrigin":"GOOGLE_PROVIDED","keyType":"USER_MANAGED"}
+[info] 
+[info] +  Created service account github-action-689223316 with Firebase Hosting admin permissions. 
+[debug] [2023-09-09T12:19:55.235Z] >>> [apiv2][query] PUT https://api.github.com/repos/gopalubt/Vconnect.github.io/actions/secrets/FIREBASE_SERVICE_ACCOUNT_FRIENDLYCHAT_232AD [none]
+[debug] [2023-09-09T12:19:55.235Z] >>> [apiv2][body] PUT https://api.github.com/repos/gopalubt/Vconnect.github.io/actions/secrets/FIREBASE_SERVICE_ACCOUNT_FRIENDLYCHAT_232AD {"encrypted_value":"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","key_id":"568250167242549743"}
+[debug] [2023-09-09T12:19:55.780Z] <<< [apiv2][status] PUT https://api.github.com/repos/gopalubt/Vconnect.github.io/actions/secrets/FIREBASE_SERVICE_ACCOUNT_FRIENDLYCHAT_232AD 201
+[debug] [2023-09-09T12:19:55.780Z] <<< [apiv2][body] PUT https://api.github.com/repos/gopalubt/Vconnect.github.io/actions/secrets/FIREBASE_SERVICE_ACCOUNT_FRIENDLYCHAT_232AD {}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_FRIENDLYCHAT_232AD. 
+[info] i  You can manage your secrets at https://github.com/gopalubt/Vconnect.github.io/settings/secrets. 
+[info] 
+[info] 
+[info] +  Created workflow file C:\Users\91978\Desktop\LearningHub\JS\chatRoom\Vconnect.github.io\.github/workflows/firebase-hosting-pull-request.yml 
+[info] 
+[info] +  Created workflow file C:\Users\91978\Desktop\LearningHub\JS\chatRoom\Vconnect.github.io\.github/workflows/firebase-hosting-merge.yml 
+[info] 
+[info] i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] i  Action required: Push any new workflow file(s) to your repo 
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] +  Wrote storage.rules 
+[info] 
+=== Emulators Setup
+[info] i  firestore: downloading cloud-firestore-emulator-v1.18.1.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.18.1.jar..."}}
+[debug] [2023-09-09T12:23:34.328Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.18.1.jar 
+[debug] [2023-09-09T12:23:35.009Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.18.1.jar 200
+[debug] [2023-09-09T12:23:35.010Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.18.1.jar [stream]
+[info] i  database: downloading firebase-database-emulator-v4.11.2.jar... {"metadata":{"emulator":{"name":"database"},"message":"downloading firebase-database-emulator-v4.11.2.jar..."}}
+[debug] [2023-09-09T12:25:03.652Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.2.jar 
+[debug] [2023-09-09T12:25:05.330Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.2.jar 200
+[debug] [2023-09-09T12:25:05.330Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.2.jar [stream]
+[info] i  pubsub: downloading pubsub-emulator-0.7.1.zip... {"metadata":{"emulator":{"name":"pubsub"},"message":"downloading pubsub-emulator-0.7.1.zip..."}}
+[debug] [2023-09-09T12:26:00.153Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.7.1.zip 
+[debug] [2023-09-09T12:26:01.065Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.7.1.zip 200
+[debug] [2023-09-09T12:26:01.065Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.7.1.zip [stream]
+[debug] [2023-09-09T12:27:12.593Z] Data is 65137179
+[debug] [2023-09-09T12:27:12.594Z] [unzip] Entry: pubsub-emulator/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-09T12:27:12.595Z] [unzip] Processing entry: pubsub-emulator\
+[debug] [2023-09-09T12:27:12.595Z] [unzip] mkdir: C:\Users\91978\.cache\firebase\emulators\pubsub-emulator-0.7.1\pubsub-emulator\
+[debug] [2023-09-09T12:27:12.597Z] [unzip] Entry: pubsub-emulator/lib/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-09T12:27:12.598Z] [unzip] Processing entry: pubsub-emulator\lib\
+[debug] [2023-09-09T12:27:12.598Z] [unzip] mkdir: C:\Users\91978\.cache\firebase\emulators\pubsub-emulator-0.7.1\pubsub-emulator\lib\
+[debug] [2023-09-09T12:27:12.599Z] [unzip] Entry: pubsub-emulator/lib/cloud-pubsub-emulator-0.7.1.jar (compressed_size=65133164 bytes, uncompressed_size=70597065 bytes)
+[debug] [2023-09-09T12:27:12.599Z] [unzip] Processing entry: pubsub-emulator\lib\cloud-pubsub-emulator-0.7.1.jar
+[debug] [2023-09-09T12:27:12.599Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\pubsub-emulator-0.7.1\pubsub-emulator\lib
+[debug] [2023-09-09T12:27:12.600Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\pubsub-emulator-0.7.1\pubsub-emulator\lib\cloud-pubsub-emulator-0.7.1.jar
+[debug] [2023-09-09T12:27:14.287Z] [unzip] Entry: pubsub-emulator/bin/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-09T12:27:14.288Z] [unzip] Processing entry: pubsub-emulator\bin\
+[debug] [2023-09-09T12:27:14.289Z] [unzip] mkdir: C:\Users\91978\.cache\firebase\emulators\pubsub-emulator-0.7.1\pubsub-emulator\bin\
+[debug] [2023-09-09T12:27:14.290Z] [unzip] Entry: pubsub-emulator/bin/cloud-pubsub-emulator.bat (compressed_size=885 bytes, uncompressed_size=2271 bytes)
+[debug] [2023-09-09T12:27:14.290Z] [unzip] Processing entry: pubsub-emulator\bin\cloud-pubsub-emulator.bat
+[debug] [2023-09-09T12:27:14.290Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\pubsub-emulator-0.7.1\pubsub-emulator\bin
+[debug] [2023-09-09T12:27:14.293Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\pubsub-emulator-0.7.1\pubsub-emulator\bin\cloud-pubsub-emulator.bat
+[debug] [2023-09-09T12:27:14.302Z] [unzip] Entry: pubsub-emulator/bin/cloud-pubsub-emulator (compressed_size=1954 bytes, uncompressed_size=5142 bytes)
+[debug] [2023-09-09T12:27:14.302Z] [unzip] Processing entry: pubsub-emulator\bin\cloud-pubsub-emulator
+[debug] [2023-09-09T12:27:14.302Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\pubsub-emulator-0.7.1\pubsub-emulator\bin
+[debug] [2023-09-09T12:27:14.304Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\pubsub-emulator-0.7.1\pubsub-emulator\bin\cloud-pubsub-emulator
+[info] i  storage: downloading cloud-storage-rules-runtime-v1.1.3.jar... {"metadata":{"emulator":{"name":"storage"},"message":"downloading cloud-storage-rules-runtime-v1.1.3.jar..."}}
+[debug] [2023-09-09T12:27:14.355Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar 
+[debug] [2023-09-09T12:27:14.865Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar 200
+[debug] [2023-09-09T12:27:14.866Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar [stream]
+[info] i  ui: downloading ui-v1.11.7.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.7.zip..."}}
+[debug] [2023-09-09T12:28:09.712Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 
+[info] 
+=== Remoteconfig Setup
+[debug] [2023-09-09T12:28:10.159Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 200
+[debug] [2023-09-09T12:28:10.159Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip [stream]
+[debug] [2023-09-09T12:28:13.605Z] Data is 3064105
+[debug] [2023-09-09T12:28:13.608Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-09T12:28:13.610Z] [unzip] Processing entry: client\
+[debug] [2023-09-09T12:28:13.611Z] [unzip] mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\
+[debug] [2023-09-09T12:28:13.669Z] [unzip] Entry: client/favicon.ico (compressed_size=2497 bytes, uncompressed_size=7406 bytes)
+[debug] [2023-09-09T12:28:13.669Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2023-09-09T12:28:13.669Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:13.672Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\favicon.ico
+[debug] [2023-09-09T12:28:13.693Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=7231 bytes, uncompressed_size=7367 bytes)
+[debug] [2023-09-09T12:28:13.694Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2023-09-09T12:28:13.694Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:13.696Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\apple-touch-icon.png
+[debug] [2023-09-09T12:28:13.891Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=16987 bytes, uncompressed_size=18186 bytes)
+[debug] [2023-09-09T12:28:13.892Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2023-09-09T12:28:13.893Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:13.936Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-512x512.png
+[debug] [2023-09-09T12:28:13.944Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-09T12:28:13.944Z] [unzip] Processing entry: client\assets\
+[debug] [2023-09-09T12:28:13.944Z] [unzip] mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\
+[debug] [2023-09-09T12:28:13.950Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-09T12:28:13.951Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2023-09-09T12:28:13.951Z] [unzip] mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\
+[debug] [2023-09-09T12:28:13.952Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2023-09-09T12:28:13.953Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2023-09-09T12:28:13.953Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions
+[debug] [2023-09-09T12:28:13.954Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\default-extension.png
+[debug] [2023-09-09T12:28:13.965Z] [unzip] Entry: client/assets/index.58ca09f7.css (compressed_size=37601 bytes, uncompressed_size=321252 bytes)
+[debug] [2023-09-09T12:28:13.966Z] [unzip] Processing entry: client\assets\index.58ca09f7.css
+[debug] [2023-09-09T12:28:13.967Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-09-09T12:28:13.983Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.58ca09f7.css
+[debug] [2023-09-09T12:28:14.024Z] [unzip] Entry: client/assets/index.c2583d42.js (compressed_size=526232 bytes, uncompressed_size=1860152 bytes)
+[debug] [2023-09-09T12:28:14.026Z] [unzip] Processing entry: client\assets\index.c2583d42.js
+[debug] [2023-09-09T12:28:14.027Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-09-09T12:28:14.029Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js
+[debug] [2023-09-09T12:28:14.082Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-09T12:28:14.083Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2023-09-09T12:28:14.083Z] [unzip] mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\
+[debug] [2023-09-09T12:28:14.085Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2023-09-09T12:28:14.086Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-09-09T12:28:14.087Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.090Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-09-09T12:28:14.097Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2023-09-09T12:28:14.098Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-09-09T12:28:14.098Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.099Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-09-09T12:28:14.103Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2023-09-09T12:28:14.103Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-09-09T12:28:14.103Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.105Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-09-09T12:28:14.111Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2023-09-09T12:28:14.112Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-09-09T12:28:14.115Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.117Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-09-09T12:28:14.127Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2023-09-09T12:28:14.132Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-09-09T12:28:14.132Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.134Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-09-09T12:28:14.138Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2023-09-09T12:28:14.139Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-09-09T12:28:14.139Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.140Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-09-09T12:28:14.148Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2023-09-09T12:28:14.149Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-09-09T12:28:14.149Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.150Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-09-09T12:28:14.153Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2023-09-09T12:28:14.154Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-09-09T12:28:14.154Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.156Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-09-09T12:28:14.160Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2023-09-09T12:28:14.161Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-09-09T12:28:14.161Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.163Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-09-09T12:28:14.166Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2023-09-09T12:28:14.166Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-09-09T12:28:14.166Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.167Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-09-09T12:28:14.171Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2023-09-09T12:28:14.171Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-09-09T12:28:14.171Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.172Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-09-09T12:28:14.177Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2023-09-09T12:28:14.177Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-09-09T12:28:14.178Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.182Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-09-09T12:28:14.185Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2023-09-09T12:28:14.186Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-09-09T12:28:14.186Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-09T12:28:14.188Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-09-09T12:28:14.191Z] [unzip] Entry: client/assets/index.c2583d42.js.map (compressed_size=1778557 bytes, uncompressed_size=7961927 bytes)
+[debug] [2023-09-09T12:28:14.192Z] [unzip] Processing entry: client\assets\index.c2583d42.js.map
+[debug] [2023-09-09T12:28:14.192Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-09-09T12:28:14.194Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js.map
+[debug] [2023-09-09T12:28:14.422Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-09T12:28:14.422Z] [unzip] Processing entry: client\assets\img\
+[debug] [2023-09-09T12:28:14.423Z] [unzip] mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\
+[debug] [2023-09-09T12:28:14.425Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2023-09-09T12:28:14.426Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2023-09-09T12:28:14.427Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\img
+[debug] [2023-09-09T12:28:14.427Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\database.png
+[debug] [2023-09-09T12:28:14.433Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=838 bytes, uncompressed_size=1504 bytes)
+[debug] [2023-09-09T12:28:14.433Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2023-09-09T12:28:14.434Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:14.435Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\safari-pinned-tab.svg
+[debug] [2023-09-09T12:28:14.443Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=5406 bytes, uncompressed_size=5723 bytes)
+[debug] [2023-09-09T12:28:14.444Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2023-09-09T12:28:14.444Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:14.450Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\mstile-150x150.png
+[debug] [2023-09-09T12:28:14.457Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2023-09-09T12:28:14.458Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2023-09-09T12:28:14.459Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:14.461Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\browserconfig.xml
+[debug] [2023-09-09T12:28:14.465Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2023-09-09T12:28:14.466Z] [unzip] Processing entry: client\robots.txt
+[debug] [2023-09-09T12:28:14.466Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:14.467Z] [unzip] Writing file: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\robots.txt
+[debug] [2023-09-09T12:28:14.471Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3064 bytes)
+[debug] [2023-09-09T12:28:14.471Z] [unzip] Processing entry: client\index.html
+[debug] [2023-09-09T12:28:14.472Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:14.472Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\index.html
+[debug] [2023-09-09T12:28:14.475Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=757 bytes, uncompressed_size=777 bytes)
+[debug] [2023-09-09T12:28:14.475Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2023-09-09T12:28:14.476Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:14.476Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\favicon-16x16.png
+[debug] [2023-09-09T12:28:14.480Z] [unzip] Entry: client/manifest.json (compressed_size=246 bytes, uncompressed_size=551 bytes)
+[debug] [2023-09-09T12:28:14.480Z] [unzip] Processing entry: client\manifest.json
+[debug] [2023-09-09T12:28:14.481Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:14.481Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\manifest.json
+[debug] [2023-09-09T12:28:14.484Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=1175 bytes, uncompressed_size=1175 bytes)
+[debug] [2023-09-09T12:28:14.485Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2023-09-09T12:28:14.485Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:14.485Z] [unzip] Writing file: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\favicon-32x32.png
+[debug] [2023-09-09T12:28:14.488Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=7602 bytes, uncompressed_size=7834 bytes)
+[debug] [2023-09-09T12:28:14.488Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2023-09-09T12:28:14.488Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-09T12:28:14.489Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-192x192.png
+[debug] [2023-09-09T12:28:14.491Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-09T12:28:14.492Z] [unzip] Processing entry: server\
+[debug] [2023-09-09T12:28:14.492Z] [unzip] mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\server\
+[debug] [2023-09-09T12:28:14.493Z] [unzip] Entry: server/server.js (compressed_size=343746 bytes, uncompressed_size=1346374 bytes)
+[debug] [2023-09-09T12:28:14.493Z] [unzip] Processing entry: server\server.js
+[debug] [2023-09-09T12:28:14.493Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2023-09-09T12:28:14.494Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\server\server.js
+[debug] [2023-09-09T12:28:14.519Z] [unzip] Entry: server/server.js.map (compressed_size=289157 bytes, uncompressed_size=1325651 bytes)
+[debug] [2023-09-09T12:28:14.520Z] [unzip] Processing entry: server\server.js.map
+[debug] [2023-09-09T12:28:14.520Z] [unzip] else mkdir: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2023-09-09T12:28:14.521Z] [unzip] deflating: C:\Users\91978\.cache\firebase\emulators\ui-v1.11.7\server\server.js.map
